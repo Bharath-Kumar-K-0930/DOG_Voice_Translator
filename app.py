@@ -89,6 +89,10 @@ def get_prediction_message(label):
     }
     return messages.get(label, "Emotion not clearly identified.")
 
+@app.route('/health')
+def health():
+    return jsonify({'status': 'healthy', 'model_loaded': model is not None}), 200
+
 @app.route('/')
 def index():
     return render_template('index.html')
