@@ -27,6 +27,7 @@ EXPOSE 5003
 
 # Define environment variable
 ENV FLASK_ENV=production
+ENV TF_CPP_MIN_LOG_LEVEL=2
 
 # Run gunicorn when the container launches
 # 0.0.0.0:$PORT tells gunicorn to bind to all interfaces on the port specified by Render

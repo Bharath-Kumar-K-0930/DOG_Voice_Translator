@@ -2,7 +2,7 @@ numpy
 pandas
 librosa
 tensorflow
-scikit-learn
+scikit-learn==1.6.1
 pydub
 flask
 flask-cors
